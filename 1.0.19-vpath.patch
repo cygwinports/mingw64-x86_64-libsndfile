@@ -1,0 +1,11 @@
+--- origsrc/libsndfile-1.0.19/configure.ac	2009-03-03 11:30:53.586000000 -0600
++++ src/libsndfile-1.0.19/configure.ac	2009-03-03 11:55:32.961000000 -0600
+@@ -445,7 +445,7 @@ if test $ac_cv_sizeof_double != 8 ; then
+ 
+ if test x"$ac_cv_prog_HAVE_AUTOGEN" = "xno" ; then
+ 	AC_MSG_WARN([[Touching files in directory tests/.]])
+-	touch tests/*.c tests/*.h
++	touch $srcdir/tests/*.c $srcdir/tests/*.h
+ 	fi
+ 
+ #====================================================================================
